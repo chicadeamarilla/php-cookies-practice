@@ -1,0 +1,8 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST["username"];
+    setcookie("username", $name, time() + 3600); // 1 hour
+    header("Location: welcome.php");
+    exit();
+}
+?>
