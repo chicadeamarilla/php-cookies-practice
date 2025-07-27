@@ -1,0 +1,11 @@
+<?php
+$name = isset($_COOKIE["username"]) ? $_COOKIE["username"] : "Guest";
+?>
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Welcome, <?php echo htmlspecialchars($name); ?>!</h2>
+    <a href="form.php">Change name</a>
+</body>
+</html>
